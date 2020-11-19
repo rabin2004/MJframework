@@ -11,6 +11,7 @@ public class LoginPage extends Base {
 
 //	@FindBy(xpath="//h3[text()='Login Successfully']")
 //	WebElement LoginSuccessMsg;
+	
 	By LoginSuccessMsg = By.xpath("//h3[text()='Login Successfully']");
 	
 	public LoginPage() {

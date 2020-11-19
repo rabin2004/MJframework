@@ -37,6 +37,10 @@ public class HomePage extends Base {
 //	WebElement submitBtn;
 	 
 	 By submitBtn = By.name("submit");
+	 
+	 By registerLink = By.linkText("REGISTER");
+	 
+	 By signOnLink = By.linkText("SIGN-ON");
 	
 	public HomePage(){
 		PageFactory.initElements(driver, this);
@@ -56,6 +60,14 @@ public class HomePage extends Base {
 	
 	public String getHomePageTitle() {
 		return driver.getTitle();
+	}
+	
+	public void clickRegisterLink() {
+		driver.findElement(registerLink).click();
+	}
+	
+	public void clickSignOnLink() {
+		driver.findElement(signOnLink).click();
 	}
 
 }
